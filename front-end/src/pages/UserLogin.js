@@ -32,17 +32,17 @@ function UserLogin() {
   };
 
   return (
-    <div>
+    <div >
       <section
         className="bg-gray-50 dark:bg-gray-900"
-        style={{ padding: "100px 420px" }}
+        style={{ padding: "100px 420px",backgroundColor:"#E1F0DA" }}
       >
-        <div style={{ textAlign: "center" }}>{message}</div>
+        <div style={{ textAlign: "center",color:'red' }}>{message}</div>
         <br />
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0" >
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700" style={{backgroundColor:"#436850",color:"white" }}>
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+              <h1 className="text-xl font-semibold leading-tight tracking-tight text-white md:text-3xl dark:text-white">
                 Sign in to your account
               </h1>
               <form
@@ -52,7 +52,7 @@ function UserLogin() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-white dark:text-white"
                   >
                     Your email
                   </label>
@@ -70,7 +70,7 @@ function UserLogin() {
                 <div>
                   <label
                     htmlFor="password"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                    className="block mb-2 text-sm font-medium text-white dark:text-white"
                   >
                     Password
                   </label>
@@ -98,7 +98,7 @@ function UserLogin() {
                     <div className="ml-3 text-sm">
                       <label
                         htmlFor="remember"
-                        className="text-gray-500 dark:text-gray-300"
+                        className="text-white dark:text-white"
                       >
                         Remember me
                       </label>
@@ -117,7 +117,7 @@ function UserLogin() {
                 >
                   Sign In
                 </button>
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-light text-white">
                   Don’t have an account yet?{" "}
                   <Link
                     to={"/register"}

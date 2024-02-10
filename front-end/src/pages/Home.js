@@ -110,13 +110,13 @@ function Home() {
   return (
     <div>
       <NavBar />
-      <div className="p-4 sm:ml-64" style={{backgroundColor:"#E1F0DA"}}>
+      <div className="p-4 sm:ml-56" style={{backgroundColor:"#E1F0DA",marginLeft:"10rem"}}>
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
           <nav className="flex mb-4" aria-label="Breadcrumb">
             <ol className="inline-flex items-center space-x-1 md:space-x-3">
               <li className="inline-flex items-center">
                 <a
-                  href="/"
+                  href="/tasks"
                   className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray"
                 >
                   <svg
@@ -132,7 +132,8 @@ function Home() {
               </li>
             </ol>
           </nav>
-          <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-gray-700">
+          <h2 style={{color:"#294B29"}}
+           className="mb-4 text-3xl font-bold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-gray-700">
             List of Tasks
           </h2>
           <br />
